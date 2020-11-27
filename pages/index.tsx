@@ -22,7 +22,7 @@ function Home({ posts }:InferGetStaticPropsType<typeof getStaticProps>) {
               <li key={slug}>
                 <Link href={`post/${slug}`}>
                 <a>
-                  {slug.replaceAll('-', ' ')}
+                  {slug.replace(/-/g, ' ')}
                 </a>
                 </Link>
               </li>
