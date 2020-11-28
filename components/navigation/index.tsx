@@ -14,12 +14,12 @@ const LINKS = [
   }
 ]
 
-type NavAnchor = {
+type NavigationLink = {
   path: string
   children: ReactNode
 }
 
-function NavAnchor ({ path, children }: NavAnchor) {
+function NavAnchor ({ path, children }: NavigationLink) {
   return (
     <Link href={path}>
       <a className={styles.navAnchor}>{children}</a>
